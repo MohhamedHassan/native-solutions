@@ -1,0 +1,63 @@
+<nav 
+[class.navbar-white]="isScrolled" id="navbar"
+class="fixed-top navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+        <a class="navbar-brand d-lg-none m-0" href="#">
+            <img style="width:100px" src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_640.jpg" alt="Native Solutions">
+        </a>
+        <button 
+        (click)="show=!show"
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+        [class.show]='show'
+        class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                <img style="width:100px" src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_640.jpg" alt="Native Solutions">
+            </a>
+            <ul class="navbar-nav   mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a 
+                     [class.active]="activeLink === 'home'" 
+       (click)="setActive('home')"
+                    class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                     [class.active]="activeLink === 'story'" 
+       (click)="setActive('story')"
+                    class="nav-link" aria-current="page" href="#story">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                        [class.active]="activeLink === 'page'" 
+       (click)="setActive('page')"
+                    class="nav-link" aria-current="page" href="#services">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                    [class.active]="activeLink === 'impact'" 
+       (click)="setActive('impact')"
+                    class="nav-link" aria-current="page" href="#impact">Our Works</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                      [class.active]="activeLink === 'opinions'" 
+       (click)="setActive('opinions')"
+                    class="nav-link" aria-current="page" href="#opinions">Careers</a>
+                </li>
+                                <li class="nav-item">
+                    <a 
+                      [class.active]="activeLink === 'opinions'" 
+       (click)="setActive('opinions')"
+                    class="nav-link" aria-current="page" href="#opinions">Blog</a>
+                </li>
+            </ul>
+            <a class="gray" >
+               Get in touch
+            </a>
+        </div>
+    </div>
+</nav>
