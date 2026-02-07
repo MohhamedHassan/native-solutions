@@ -2,8 +2,8 @@
 [class.navbar-white]="isScrolled" id="navbar"
 class="fixed-top navbar navbar-expand-lg" id="navbar">
     <div class="container">
-        <a class="navbar-brand d-lg-none m-0" href="#">
-            <img style="width:100px" src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_640.jpg" alt="Native Solutions">
+        <a class="navbar-brand d-lg-none m-0" routerLink="/">
+            <img   src="assets/image 2.png" alt="Native Solutions">
         </a>
         <button 
         (click)="show=!show"
@@ -14,23 +14,27 @@ class="fixed-top navbar navbar-expand-lg" id="navbar">
         <div
         [class.show]='show'
         class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <a class="navbar-brand d-none d-lg-inline-block" href="#">
-                <img style="width:100px" src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_640.jpg" alt="Native Solutions">
+            <a class="navbar-brand d-none d-lg-inline-block" routerLink="/">
+                <img  src="assets/image 2.png" alt="Native Solutions">
             </a>
             <ul class="navbar-nav   mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a 
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}"
                      [class.active]="activeLink === 'home'" 
        (click)="setActive('home')"
-                    class="nav-link active" aria-current="page" href="#">Home</a>
+                    class="nav-link active" aria-current="page" routerLink="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a 
+                           routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}"
                      [class.active]="activeLink === 'story'" 
        (click)="setActive('story')"
-                    class="nav-link" aria-current="page" href="#story">About Us</a>
+                    class="nav-link" aria-current="page" routerLink="/about-us">About Us</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a 
                         [class.active]="activeLink === 'page'" 
        (click)="setActive('page')"
@@ -53,9 +57,11 @@ class="fixed-top navbar navbar-expand-lg" id="navbar">
                       [class.active]="activeLink === 'opinions'" 
        (click)="setActive('opinions')"
                     class="nav-link" aria-current="page" href="#opinions">Blog</a>
-                </li>
+                </li> -->
             </ul>
-            <a class="gray" >
+            <a 
+            href="mailto:Info@nativesolutionsfze.com"
+            class="gray d-none d-lg-inline" >
                Get in touch
             </a>
         </div>

@@ -1,0 +1,109 @@
+.about-us-main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    h1 {
+font-family: Inter Tight;
+font-weight: 500;
+font-style: Medium;
+font-size: 55px; 
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #14141E;
+span {
+    color: #784723;
+}
+    }
+    p {
+        font-family: Inter Tight;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px; 
+line-height: 22.4px;
+letter-spacing: 0px;
+text-align: center;
+color: #1A1A1A;
+margin: 20px 0 50px;
+    }
+     a.gray {
+background-color: #327324;
+padding-top: 14px;
+padding-right: 20px;
+padding-bottom: 14px;
+padding-left: 20px;
+border-radius: 99px;
+cursor: pointer;
+color: white;
+font-family: Inter Tight;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px; 
+line-height: 22px; 
+}
+}
+.driving {
+    h2 {
+        font-family: Inter Tight;
+font-weight: 500;
+font-style: Medium;
+font-size: 55px; 
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #14141E;
+span {
+   color: #784723
+}
+    }
+> p {
+    font-family: Inter Tight;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+color:#1A1A1A;
+line-height: 22.4px;
+letter-spacing: 0px;
+text-align: center;
+margin-bottom: 30px;
+}       .icon {
+            border-radius: 8px;
+            padding: 10px;
+            background: #F2F4F3;
+            border: 1px solid #FFFFFF0F;
+            box-shadow: 0px 7px 40px 0px #FFFFFF14 inset;
+            color: #327324;
+            width: fit-content;
+            margin-bottom: 8px;
+        }
+          .main-article {
+            border: 1px solid #E6E6E6;
+            border-radius: 20px;
+            padding: 30px;
+            height: 100%;
+            h3 {
+                font-family: Inter Tight;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 32px;
+                line-height: 44.8px;
+                letter-spacing: 0px;
+                color: #1A1A1A;
+            }
+
+            p {
+                font-family: Inter Tight;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                line-height: 22.4px;
+                letter-spacing: 0px;
+                color: #327324; 
+            }
+        }
+}
