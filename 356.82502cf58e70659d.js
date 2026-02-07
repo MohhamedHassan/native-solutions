@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknative_solutions=self.webpackChunknative_solutions||[]).push([[356],{356:(E,o,t)=>{t.r(o),t.d(o,{AboutUsModule:()=>l});var n=t(177),a=t(529),u=t(540);let l=(()=>{class s{static{this.\u0275fac=function(i){return new(i||s)}}static{this.\u0275mod=u.$C({type:s})}static{this.\u0275inj=u.G2t({imports:[n.MD,a.Q]})}}return s})()}}]);
