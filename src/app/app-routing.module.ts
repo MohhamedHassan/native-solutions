@@ -6,10 +6,10 @@ const routes: Routes = [
     path:'',
     loadChildren:() => import('./pages/home/home.module').then(m=>m.HomeModule)
   },
-  {
-    path:'about-us',
-    loadChildren:() => import('./pages/about-us/about-us.module').then(m=>m.AboutUsModule)
-  }
+  // {
+  //   path:'about-us',
+  //   loadChildren:() => import('./pages/about-us/about-us.module').then(m=>m.AboutUsModule)
+  // }
 ];
 
 @NgModule({
